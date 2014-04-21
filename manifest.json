@@ -1,0 +1,19 @@
+{
+  "name": "随机密码生成器",
+  "description": "生成随机密码",
+  "version": "1.0",
+  "icons": { 
+    "16": "img/icon_16.png" ,
+    "48": "img/icon_48.png" ,
+    "128": "img/icon.png" 
+  },
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "browser_action": {
+    "default_title": "随机密码生成器",
+    "default_icon": "img/icon.png",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}

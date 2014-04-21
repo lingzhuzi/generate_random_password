@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<title>随机密码生成器</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
+</head>
+<body>
+	<div class="header">随机密码生成器</div>
+
+	<div class='title'>选项</div>
+
+	<div class="options">
+		<div class='option'>
+			<input type="checkbox" id="lowerCase" name="lowerCase" checked="checked">
+			<label for='lowerCase'>小写字母</label>
+		</div>
+		<div class='option'>
+			<input type="checkbox" id="upperCase" name="upperCase" checked="checked">
+			<label for='upperCase'>大写字母</label>
+		</div>
+		<div class='option'>
+			<input type="checkbox" id="number" name="number" checked="checked">
+			<label for='number'>数字</label>
+		</div>
+		<div class='option'>
+			<input type="checkbox" id="punctuation" name="punctuation" checked="checked">
+			<label for='punctuation'>标点符号</label>
+		</div>
+		<div>
+			<label for="length">长度</label>
+			<input type="number" id="length" min="4" step="1" value="8" name="length" >
+		</div>
+	</div>
+
+	<div class="notice"></div>
+
+	<div class="btn_ctn"><a id="generate_btn" href="#" class="btn btn-primary">生成</a></div>
+
+	<div class="result">
+		<div class='title'>生成结果</div>
+		<span id="password_result"></span>
+	</div>
+
+	
+
+	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+</body>
+</html>
